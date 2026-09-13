@@ -1,2 +1,8 @@
 .idea/
 .target/
+node_modules/
+dist/
+.wrangler/
+.dev.vars*
+.env*
+*.log
