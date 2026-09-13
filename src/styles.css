@@ -1,0 +1,53 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #18382e;
+  background: #f5f7f2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+.welcome {
+  max-width: 56rem;
+  min-height: 100svh;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+.brand { font-size: 1.4rem; font-weight: 750; }
+section { padding: clamp(3rem, 12vh, 8rem) 0; }
+.eyebrow { color: #145c47; font-weight: 600; }
+h1 {
+  max-width: 12ch;
+  font-size: clamp(2.8rem, 8vw, 5rem);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  margin: 1rem 0;
+}
+.description { max-width: 34ch; color: #4e6259; font-size: 1.2rem; line-height: 1.6; }
+.status {
+  margin-top: 2.5rem;
+  border-top: 1px solid #cdd8cd;
+  padding-top: 1.25rem;
+  color: #4e6259;
+  line-height: 1.5;
+}
+
+h1 { max-width: 18ch; font-size: clamp(2.2rem, 7vw, 3.6rem); }
+section { padding: 1.5rem 0; }
+fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 1rem; }
+label { display: grid; gap: 0.4rem; font-weight: 600; }
+input, select, button { font: inherit; min-height: 48px; border-radius: 8px; }
+input, select { width: 100%; min-width: 0; padding: 0.75rem; border: 1px solid #859b90; background: white; color: #18382e; }
+button { padding: 0.75rem 1rem; background: #145c47; color: white; border: 0; cursor: pointer; }
+button:disabled { opacity: 0.65; cursor: wait; }
+:focus-visible { outline: 3px solid #a15b00; outline-offset: 3px; }
+[role="alert"] { color: #9c2424; }
+.transactions { padding: 0; list-style: none; }
+.transactions li { display: flex; justify-content: space-between; gap: 1rem; border-bottom: 1px solid #cdd8cd; padding: 1rem 0; }
+.transactions li > div { min-width: 0; overflow-wrap: anywhere; }
+.transactions li > span { flex-shrink: 0; text-align: right; }
+small { display: block; margin-top: 0.3rem; color: #4e6259; }
+.income { color: #145c47; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
